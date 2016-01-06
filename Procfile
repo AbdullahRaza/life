@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath life life.wsgi
+web: gunicorn life.wsgi:childhood --log-file -
