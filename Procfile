@@ -1,1 +1,1 @@
-web: gunicorn life.wsgi:life --log-file -
+web: gunicorn life.wsgi
