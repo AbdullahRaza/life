@@ -1,1 +1,1 @@
-web: gunicorn life.wsgi:childhood
+web: gunicorn life.wsgi
