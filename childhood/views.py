@@ -38,6 +38,7 @@ class GroupViewSet(viewsets.ModelViewSet):
 class MusicianViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Musician.objects.all()
     serializer_class = MusicianSerializer
+
     permission_classes = (permissions.AllowAny,)
 
 
