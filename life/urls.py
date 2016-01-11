@@ -23,6 +23,7 @@ router =routers.DefaultRouter()
 router.register(r'users',views.UserViewSet)
 router.register(r'groups',views.GroupViewSet)
 router.register(r'musicians',views.MusicianViewSet)
+router.register(r'videos',views.VideosViewSet)
 
 
 urlpatterns = [
@@ -32,6 +33,6 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^form/','childhood.views.form'),
     url(r'^uploadfile/','childhood.views.uploadfile'),
-    url(r'^downloadfile/','childhood.views.downloadfile'),
+    url(r'^downloadfile/(?P<videoid>[0-9]+)/','childhood.views.downloadfile'),
 
 ]

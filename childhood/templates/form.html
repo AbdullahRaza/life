@@ -1,5 +1,6 @@
 <form method="post" action="../uploadfile/" enctype="multipart/form-data">
     {% csrf_token %}
+    <input type="text" name="videoname" value="enter video name"/>
     <input type="file" name="files" multiple/>
     <input type="submit" value="Upload"/>
 </form>
