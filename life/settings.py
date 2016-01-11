@@ -113,3 +113,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
     'PAGE_SIZE': 10
 }
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'childhood/media')
+# MEDIA_URL = '/media/'

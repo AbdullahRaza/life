@@ -30,4 +30,8 @@ urlpatterns = [
     url(r'^$', 'childhood.views.home'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^', include(router.urls)),
+    url(r'^form/','childhood.views.form'),
+    url(r'^uploadfile/','childhood.views.uploadfile'),
+    url(r'^downloadfile/','childhood.views.downloadfile'),
+
 ]
